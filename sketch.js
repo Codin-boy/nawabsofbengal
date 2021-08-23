@@ -14,6 +14,7 @@ var nawab15,nawab15Img;
 var nawab16,nawab16Img;
 var nawab17,nawab17Img;
 var nawab18,nawab18Img;
+var sound;
 
 function preload(){
   nawab1Img = loadImage("nawab1.jpg")
@@ -31,6 +32,7 @@ function preload(){
   nawab16Img = loadImage("nawab16.jpg")
   nawab17Img = loadImage("nawab17.jpg")
   nawab18Img = loadImage("nawab18.jpg")
+  sound = loadSound("sound.mp3")
 }
 
 function setup(){
@@ -80,6 +82,8 @@ function setup(){
   speed21 = createSprite(1,1,20,20)
   speed21.visible=false
  
+  sound.playSound();
+  
   nawab1 = createSprite(1,400,20,20);
   nawab1.scale=0.5
   nawab1.addImage(nawab1Img);
